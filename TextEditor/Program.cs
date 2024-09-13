@@ -48,7 +48,8 @@ namespace TextEditor
         static void Edit()
         {
             Console.Clear();
-            Console.WriteLine("Escreva seu texto abaixo ou ESC para sair");
+            Console.WriteLine("Escreva seu texto e use ESC para salvar");
+            Console.WriteLine("Especifique a extensão do arquivo ao salvar, exemplo: .txt para texto");
             Console.WriteLine("-----------------------");
             string text = "";
 
@@ -65,7 +66,7 @@ namespace TextEditor
         static void Save(string text)
         {
             Console.Clear();
-            Console.WriteLine("Informe o caminho para salvar o arquivo.");
+            Console.WriteLine("IInforme o caminho para salvar o arquivo.");
             var path = Console.ReadLine();
 
             // Sempre que abrir um arquivo, feche ele para que não ocorra erros no cod.
